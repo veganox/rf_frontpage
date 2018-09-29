@@ -7,3 +7,6 @@ Resource    ./PO/Team.robot
 
 
 *** Keywords ***
+Check Welcome Page
+    Welcome.Page contains RobotFrameworkTutorial Title
+

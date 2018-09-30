@@ -5,13 +5,13 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Begin Web Test
-    [Arguments]  ${browser} ${url}
+    [Arguments]  ${browser}
     open browser  about:blank   ${browser}
-    goto test web  ${url}
+
+End Web Test
+    close browser
+
 
 GoTo Test Web
     [Arguments]  ${url}
     go to  ${url}
-
-End Web Test
-    close browser

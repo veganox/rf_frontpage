@@ -2,6 +2,9 @@
 Library  SeleniumLibrary
 
 *** Variables ***
+${intro-lead-in} =  "Welcome To Our Studio!"
+${intro-heading} =  "It's Nice To Meet You"
+
 
 
 *** Keywords ***

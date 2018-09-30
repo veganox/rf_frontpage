@@ -1,12 +1,12 @@
 *** Settings ***
-Resource    ./PO/Welcome.robot
-Resource    ./PO/TopNav.robot
-Resource    ./PO/Team.robot
+Resource    PO/Welcome.robot
+Resource    PO/TopNav.robot
+Resource    PO/Team.robot
 
 *** Variables ***
 
 
 *** Keywords ***
-Check Welcome Page
+Should be
     Welcome.Page contains RobotFrameworkTutorial Title
 

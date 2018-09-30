@@ -2,11 +2,13 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-${intro-lead-in} =  "Welcome To Our Studio!"
-${intro-heading} =  "It's Nice To Meet You"
-
+${Welcome_Page_id}=    id=mainNav
 
 
 *** Keywords ***
-Page contains RobotFrameworkTutorial Title
-    wait until page contains    RobotFrameworkTutorial.com Test Client
+Navigate to Welcome Page
+    [Arguments]     ${url}
+    go to           ${url}
+
+Verify Page Loaded
+    wait until page contains element    ${Welcome_Page_id}

@@ -27,7 +27,11 @@ Team Page Should match Requirement
     FrontOfficeApp.Go to Front Office Welcome Page  ${START_URL}
     FrontOfficeApp.Go to Team Page
     FrontOfficeApp.Validate Team Page
-    log     Executing Test 3
+    log     Executing Test 2
     #sleep   5s
 
+About Page Should match Requirement
+    FrontOfficeApp.Go to Front Office Welcome Page  ${START_URL}
+    FrontOfficeApp.Go to About Page
+    log     Executing Test 3
 *** Keywords ***
